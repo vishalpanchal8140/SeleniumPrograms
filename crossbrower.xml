@@ -13,10 +13,4 @@
       <class name="DevOpsAssignment.CrossbrowserTest"/>
     </classes>
   </test>
-  <test thread-count="5" name="Test3">
-	<parameter name="bname" value="Firefox"></parameter>
-    <classes>
-      <class name="DevOpsAssignment.CrossbrowserTest"/>
-    </classes>
-  </test>
 </suite>

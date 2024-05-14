@@ -34,13 +34,6 @@ public class CrossbrowserTest {
 
 			driver = new RemoteWebDriver(new URL(""), options);
 			Reporter.log("Driver session established with server!", true);
-		} else if (bname.equalsIgnoreCase("firefox")) {
-			FirefoxOptions options = new FirefoxOptions();
-			Reporter.log("Test Execution on Firefox!", true);
-
-			driver = new RemoteWebDriver(new URL(""), options);
-			Reporter.log("Driver session established with server!", true);
-
 		}
 		
 		Thread.sleep(5000);
