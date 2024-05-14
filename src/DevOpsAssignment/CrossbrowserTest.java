@@ -26,14 +26,21 @@ public class CrossbrowserTest {
 			ChromeOptions options = new ChromeOptions();
 			Reporter.log("Test Execution on Chrome!", true);
 
-			driver = new RemoteWebDriver(new URL(""), options);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/"), options);
 			Reporter.log("Driver session established with server!", true);
 		} else if (bname.equalsIgnoreCase("edge")) {
 			EdgeOptions options = new EdgeOptions();
 			Reporter.log("Test Execution on Edge!", true);
 
-			driver = new RemoteWebDriver(new URL(""), options);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/"), options);
 			Reporter.log("Driver session established with server!", true);
+		} else if (bname.equalsIgnoreCase("firefox")) {
+			FirefoxOptions options = new FirefoxOptions();
+			Reporter.log("Test Execution on Firefox!", true);
+
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/"), options);
+			Reporter.log("Driver session established with server!", true);
+
 		}
 		
 		Thread.sleep(5000);
